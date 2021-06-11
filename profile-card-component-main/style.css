@@ -103,8 +103,8 @@ h2{
 .bg-top{
     background: url(/images/bg-pattern-top.svg);
     position: absolute;
-    bottom: 51%;
-    right: 44%;
+    bottom: 44%;
+    right: 46%;
     width: 978px;
     height: 978px;
     transform: rotate(10deg);
@@ -113,21 +113,18 @@ h2{
 .bg-bottom{
     background: url(/images/bg-pattern-bottom.svg);
     position: absolute;
-    top: 51%;
-    left: 44%;
+    top: 48%;
+    left: 51%;
     width: 978px;
     height: 978px;
     transform: rotate(10deg);
 }
 
 
-
-
-
-
-
-
-/*
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px;
+    position: fixed;
+    left: 31%;
+    top: 81%;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
-*/
