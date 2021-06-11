@@ -89,8 +89,6 @@ span{
     opacity: 50%;
 }
 
-
-
 h2{
     position: relative;
     font-size: 22px;
@@ -101,6 +99,27 @@ h2{
     justify-content: space-around;
     left: 2px;
 }
+
+.bg-top{
+    background: url(/images/bg-pattern-top.svg);
+    position: absolute;
+    bottom: 51%;
+    right: 44%;
+    width: 978px;
+    height: 978px;
+    transform: rotate(10deg);
+}
+
+.bg-bottom{
+    background: url(/images/bg-pattern-bottom.svg);
+    position: absolute;
+    top: 51%;
+    left: 44%;
+    width: 978px;
+    height: 978px;
+    transform: rotate(10deg);
+}
+
 
 
 
