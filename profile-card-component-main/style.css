@@ -1,0 +1,114 @@
+*{
+    font-family: "Kumbh", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background: hsl(185, 75%, 39%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.card{
+    width: 350px;
+    height: 410px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.photo{
+    border: 5px white solid;
+    overflow: hidden;
+    width: 95px;
+    height: 95px;
+    position: relative;
+    left: 35%;
+    top: -13%;
+    border-radius: 50%;
+    z-index: 99999;
+}
+.medium-card{
+    background: #fff;
+    position: relative;
+    width: 350px;
+    height: 280px;
+    top: -110px;
+}
+.profile{
+    position: relative;
+    top: 20%;
+    width: 350px;
+    height: 140px;
+    padding-top: 14px
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{ 
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+span.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+span.age{
+    font-size: 19px;
+}
+
+span{
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.score{
+    margin-top: 38px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    justify-items: center;
+}
+.score::before{
+    position: absolute;
+    content: "";
+    width: 350px;
+    border: 1px solid hsl(0, 0%, 59%);
+    top: 57%;
+    opacity: 50%;
+}
+
+
+
+h2{
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    width: 44px;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    left: 2px;
+}
+
+
+
+
+
+
+
+/*
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*/
