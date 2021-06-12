@@ -61,20 +61,26 @@ span.city{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Kumbh", sans-serif;
+    font-weight: 400;
     font-size: 18px;
+    color: hsl(0, 0%, 59%);
 }
 
 span.age{
-    font-size: 19px;
+    font-size: 18px;
+    color: hsl(0, 0%, 59%);
 }
 
 span{
     font-size: 14px;
-    color: hsl(227, 10%, 46%);
+    color: hsl(0, 0%, 59%);
+    font-family: "Kumbh", sans-serif;
     font-weight: 400;
+    letter-spacing: 1px;
 }
 .score{
-    margin-top: 38px;
+    margin: 30px 20px 0px 20px;
     display: grid;
     grid-auto-flow: column;
     gap: 4px;
@@ -86,7 +92,8 @@ span{
     width: 350px;
     border: 1px solid hsl(0, 0%, 59%);
     top: 57%;
-    opacity: 50%;
+    left: 0px;
+    opacity: 25%;
 }
 
 h2{
@@ -95,8 +102,6 @@ h2{
     font-weight: 700;
     width: 44px;
     height: 32px;
-    display: flex;
-    justify-content: space-around;
     left: 2px;
 }
 
@@ -124,7 +129,42 @@ h2{
 .attribution { 
     font-size: 11px;
     position: fixed;
-    left: 31%;
-    top: 81%;
+    left: 40%;
+    top: 95%;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 375px) {
+    .card{
+        width: 320px;
+        top: 48%;
+        left: 48%;
+    }
+    .bg-top{
+        bottom: 47%;
+        right: 49%;
+        transform: rotate(-14deg);
+    }
+    .bg-bottom{
+        top: 36%;
+        left: 51%;
+        transform: rotate(-40deg);
+    }
+    h1{
+        padding-right: 24px;;
+    }
+    h2{
+        left: -14px;
+    }
+    span{
+        position: relative;
+        left: -14px;
+    }
+    .score{
+        margin: 35px;
+    }
+    .score::before{
+        left: -20px;
+    }   
+}
