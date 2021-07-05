@@ -1,16 +1,26 @@
 *{
-    font-family: "Kumbh", sans-serif;
     margin: 0;
     padding: 0;
 }
 body{
-    box-sizing: border-box;
-    background: hsl(185, 75%, 39%);
+    font-family: "Kumbh", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: 
+        url('/images/bg-pattern-top.svg'), 
+        url('/images/bg-pattern-bottom.svg');
+    background-position: 
+        right calc(47vw + 15%) bottom calc(65vh - 15vw),
+        left calc(40vw + 25%) top calc(72vh - 15vw);
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding: 0px 24px;
 }
-
 .container{
-    width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .card{
     width: 350px;
@@ -19,8 +29,6 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 8px;
-    overflow: hidden;
 }
 .photo{
     border: 5px white solid;
@@ -33,12 +41,16 @@ body{
     border-radius: 50%;
     z-index: 99999;
 }
+.upper-card svg{
+    border-radius: 10px 10px 0px 0px;
+}
 .medium-card{
     background: #fff;
     position: relative;
     width: 350px;
     height: 280px;
     top: -110px;
+    border-radius: 0px 0px 10px 10px;
 }
 .profile{
     position: relative;
@@ -111,51 +123,24 @@ span.social{
     justify-content: space-evenly;
 }
 
-.bg-top{
-    background: url(/images/bg-pattern-top.svg);
-    position: absolute;
-    bottom: 44%;
-    right: 46%;
-    width: 978px;
-    height: 978px;
-    transform: rotate(10deg);
-}
-
-.bg-bottom{
-    background: url(/images/bg-pattern-bottom.svg);
-    position: absolute;
-    top: 48%;
-    left: 51%;
-    width: 978px;
-    height: 978px;
-    transform: rotate(10deg);
-}
-
-
 .attribution { 
     font-size: 11px;
-    position: fixed;
-    left: 40%;
+    font-size: 11px;
+    position: relative;
+    left: 15%;
     top: 95%;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 @media (max-width: 375px) {
+    body{
+        background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw), left calc(61vw + 25%) top calc(56vh - 15vw);
+    }
     .card{
         width: 320px;
         top: 48%;
         left: 48%;
-    }
-    .bg-top{
-        bottom: 47%;
-        right: 49%;
-        transform: rotate(-14deg);
-    }
-    .bg-bottom{
-        top: 36%;
-        left: 51%;
-        transform: rotate(-40deg);
     }
     h1{
         padding-right: 24px;;
